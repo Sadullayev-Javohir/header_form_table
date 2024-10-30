@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    padding: 10px;
+    background: rgb(245, 243, 243);
+}
+
+header {
+    background: rgb(2, 122, 106);
+}
+
+header ul {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    list-style: none;
+    padding: 15px;
+}
+
+header ul li a {
+    padding: 10px;
+    font-size: 25px;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+section h1 {
+    font-size: 50px;
+    font-weight: 600;
+    color: rgb(2, 122, 106);
+    margin: 20px 0;
+    text-align: center;
+}
+
+form {
+    border: 1px solid black;
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+}
+
+input, button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    margin-top: 5px;
+    border: none;
+    outline: none;
+    border: 1px solid grey;
+    border-radius: 10px;
+}
+
+input::placeholder {
+    font-size: 14px;            
+}
+
+button {
+    font-size: 17px;
+    background: rgb(2, 122, 106);
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+label {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+form h6 {
+    font-size: 18px;
+    color: green;
+    font-weight: 700;
+
+}
+
+h3 {
+    font-weight: 600;
+    font-size: 24px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 10px;
+}
+
+th {
+    background-color: rgb(2, 122, 106);
+    color: white;
+    font-weight: 600;
+    text-align: left;
+}
+
+td::first-letter {
+    color: red;
+    font-weight: 600;
+}
+
+/* mobie device 500px */
+@media(max-width: 500px) {
+    header ul {
+        display: flex;
+        flex-direction: column;
+        line-height: 30px;
+    }
+    header ul li a {
+        font-size: 20px;
+    }
+    section h1 {
+        font-size: 30px;
+    }
+    h3 {
+        font-size: 17px;
+    }
+    label {
+        font-size: 14px;
+    }
+}
